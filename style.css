@@ -115,8 +115,7 @@ header h1{
 .kep{
     margin-left: auto;
     margin-right: auto;
-    min-width: 20%;
-    max-width: 80%;
+    width: 80%;
     align-items: center;
     border: 2px solid rgb(74, 3, 96);
 }
