@@ -1,0 +1,154 @@
+#elso{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e8a1e1, #31012b);
+}
+
+#masodik{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #e8a1e1, #31012b);
+}
+
+#jelszo.container{
+   text-align: center;
+   display: block;
+}
+
+#jelszo.container p{
+    display:none;
+    color: white;
+    font-size: 20px;
+    font-family: "Molle", cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Molle", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+    margin-bottom: 20px;
+}
+
+#jelszo{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(74, 3, 96);
+    color: white;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    width: 50%;
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+button{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(154, 104, 169);
+    color: white;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Molle", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+    margin-bottom: 20px;
+}
+
+.heart h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.heart{
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(170, 114, 187);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 10%;
+    padding: 40px;
+}
+
+#elsok{
+    width:80%;
+    border-radius: 30%;
+}
+
+.kep{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 20%;
+    max-width: 80%;
+    align-items: center;
+    border: 2px solid rgb(74, 3, 96);
+}
+
+.kep-container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.heart p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    color: rgb(74, 3, 96);
+}
+
+.kepdoboz{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .kepdoboz{
+        width: 100%;
+    }
+}

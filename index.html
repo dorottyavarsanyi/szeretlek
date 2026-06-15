@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szeretlek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="elso">
+    
+    <div id="jelszo-container" style="text-align: center;">
+    <h1>Szia kicsi!</h1>
+    <input type="jelszo" id="jelszo" placeholder="Írd be a jelszót!">
+    <button onclick="ellenorzes()">Ellenőrzés</button>
+    <p>Tipp: A jelszó a legtöbbet elhangzó szó köztünk!</p>
+    </div>
+
+
+    <script >
+        function ellenorzes() {
+            const jelszo = document.getElementById("jelszo").value;
+
+            if (jelszo === "Szeretlek") {
+                document.getElementById("jelszo-container").style.display = "none";
+                window.location.href = "szer2.html";
+            } else {
+                alert("Hibás jelszó!");
+            }
+        }
+    </script>
+
+
+</body>
+</html>
