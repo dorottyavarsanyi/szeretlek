@@ -79,7 +79,7 @@ header{
 header h1{
     display: flex;
     text-align: center;
-    font-size: 70px;
+    font-size: clamp(40px, 8vw, 70px);
     font-family: "Molle", cursive;
     font-weight: 800;
     font-style: italic;
@@ -88,6 +88,7 @@ header h1{
 }
 
 .heart h2{
+    font-size: clamp(28px, 5vw, 50px);
     margin-top: 0;
     margin-bottom: 20px;
     margin-left: auto;
@@ -170,6 +171,7 @@ header h1{
 }
 
 .szamlalo h2{
+    font-size: clamp(28px, 5vw, 50px);
     margin-top: 0;
     margin-bottom: 40px;
     margin-left: auto;
@@ -216,6 +218,7 @@ header h1{
 }
 
 .ok h2{
+    font-size: clamp(28px, 5vw, 50px);
     margin-top: 0;
     margin-bottom: 40px;
     margin-left: auto;
@@ -262,9 +265,11 @@ header h1{
     box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
     border-radius: 100px;
     padding: 40px;
+    margin-bottom: 50px;
 }
 
 .zenek h2{
+    font-size: clamp(28px, 5vw, 50px);
     margin-top: 0;
     margin-bottom: 40px;
     margin-left: auto;
@@ -328,8 +333,81 @@ header h1{
 }
 
 @media (max-width: 768px) {
+
+    header h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    .heart,
+    .szamlalo,
+    .ok,
+    .zenek{
+        width: 92%;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .kep-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
     .kepdoboz{
         width: 100%;
+    }
+
+    .kepdoboz img,
+    .kep{
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+    }
+
+    .heart p{
+        font-size: 20px;
+    }
+
+    .szamlalo p{
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    #idoSzamlalo span{
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .ok p{
+        font-size: 18px;
+        padding: 15px 10px;
+        width: calc(100% - 20px);
+        margin: 5px auto;
+        display: block;
+    }
+
+    .zene{
+        width: calc(100% - 20px);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .zene p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .borito{
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
     }
 }
 
