@@ -365,6 +365,69 @@ header h1{
     color: #31012b;
 }
 
+.datumok{
+    text-align: center;
+    margin-top: 50px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(211, 169, 224);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 100px;
+    padding: 40px;
+    margin-bottom: 50px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;   
+}
+
+.datumok h2{
+    font-size: clamp(28px, 5vw, 50px);
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.datum{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(74, 3, 96);
+    border-radius: 5px;
+    color: rgb(74, 3, 96);
+    font-size: 30px;
+    display: inline-flex;
+    gap: 15px;
+    padding: 15px;
+    min-width: 80px;
+    width: 90%;
+    margin: 10px auto;
+    padding-top: 20px;
+    min-height: 120px;
+}
+
+.datum:hover{
+    cursor: pointer;
+    background-color: rgba(74, 3, 96, 0.3);
+}
+
+.datum img{
+    color: #31012b;
+    width: 80px;
+    height: 80px;
+}
+
+
+
 @media (max-width:768px){
 
     .heart,
@@ -432,7 +495,17 @@ header h1{
     height: 70px;
     }
 
+    #idoSzamlalo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 20px !important;
+    line-height: 1.5;
+    }
+
     #idoSzamlalo span{
-        width: 80%;
+    margin: 0;
     }
 }
