@@ -35,8 +35,45 @@
             <div class="kepdoboz">
             <img src="szeretlek4.jpg" alt="Az első alkalom mikor a barátainkkal is voltunk" class="kep" title="Az első alkalom mikor a barátainkkal is voltunk"><p>Az első alkalom mikor a barátainkkal is voltunk</p>
             </div>
-            
+
          </div>
+        </div>
+
+        <div class="szamlalo">
+        
+            <h2>Amióta együtt vagyunk</h2>
+            <p id="idoSzamlalo"></p>
+
+            
+            <script>
+            const kezdet = new Date("2025-12-22T14:23:00"); 
+
+             function frissitSzamlalo() {
+             const most = new Date();
+             const kulonbseg = most - kezdet;
+
+             const nap = Math.floor(kulonbseg / (1000 * 60 * 60 * 24));
+             const ora = Math.floor((kulonbseg / (1000 * 60 * 60)) % 24);
+             const perc = Math.floor((kulonbseg / (1000 * 60)) % 60);
+             const masodperc = Math.floor((kulonbseg / 1000) % 60);
+
+             document.getElementById("idoSzamlalo").innerHTML = `
+            <span class="nap">${nap} nap</span> •
+            <span class="ora">${ora} óra</span> •
+            <span class="perc">${perc} perc</span> •
+            <span class="mp">${masodperc} mp</span>
+    `;
+            }
+
+            frissitSzamlalo();
+            setInterval(frissitSzamlalo, 1000);
+            </script>
+
+        </div>
+
+        <!-- <div class="level">
+            <h2>Szia édes!</h2>
+            <p></p>
         </div>
 
 </body>

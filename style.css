@@ -8,12 +8,16 @@
 }
 
 #masodik{
-    margin: 0;
+        margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: linear-gradient(135deg, #e8a1e1, #31012b);
+    background-image: url("copilot_20260616_090023.png"), linear-gradient(135deg, #e8a1e1, #31012b);
+    background-repeat: no-repeat, no-repeat; 
+    background-size: cover, cover; 
+    background-blend-mode: normal; 
 }
 
 #jelszo.container{
@@ -73,8 +77,9 @@ header{
 }
 
 header h1{
+    display: flex;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     font-family: "Molle", cursive;
     font-weight: 800;
     font-style: italic;
@@ -100,7 +105,7 @@ header h1{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: rgb(170, 114, 187);
+    background-color: rgb(211, 169, 224);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
     border-radius: 10%;
@@ -133,7 +138,7 @@ header h1{
 
 .heart p{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Times New Roman", cursive;
     font-weight: 800;
     color: rgb(74, 3, 96);
@@ -146,8 +151,55 @@ header h1{
     text-align: center;
 }
 
+.szamlalo{
+    margin-top: 50px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(211, 169, 224);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 100px;
+    padding: 40px;
+}
+
+.szamlalo h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.szamlalo p{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Neuton", cursive;
+    font-weight: 800;
+    color: rgb(74, 3, 96);
+}
+
+#idoSzamlalo span {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 2px solid rgb(74, 3, 96);
+}
+
 @media (max-width: 768px) {
     .kepdoboz{
         width: 100%;
     }
 }
+
