@@ -292,7 +292,7 @@ header h1{
     border-radius: 100px;
     padding: 40px;
     margin-bottom: 50px;
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
@@ -451,6 +451,13 @@ header h1{
         max-width: 100%;
     }
 
+    .kep,
+    .kepdoboz img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
     .zene{
         width: 100%;
         max-width: 100%;
@@ -487,10 +494,6 @@ header h1{
         font-size: 24px;
     }
 
-    .datum p{
-        font-size: 24px;
-    }
-
     .zene{
     width: 100%;
     }
@@ -505,7 +508,6 @@ header h1{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-
     font-size: 20px !important;
     line-height: 1.5;
     }
@@ -513,4 +515,51 @@ header h1{
     #idoSzamlalo span{
     margin: 0;
     }
+
+    .datumok{
+    width: 95%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.datum{
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.datum img{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.datum p{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.zene{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.zene p{
+    text-align: left;
+    font-size: 16px;
+}
+
+.heart img,
+.szamlalo img,
+.ok img,
+.zenek img,
+.datumok img{
+    max-width: 100%;
+    height: auto;
+}
+    
 }
