@@ -381,7 +381,7 @@ header h1{
     display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;   
+    gap: 15px;
 }
 
 .datumok h2{
@@ -409,7 +409,7 @@ header h1{
     gap: 15px;
     padding: 15px;
     min-width: 80px;
-    width: 90%;
+    width: 85%;
     margin: 10px auto;
     padding-top: 20px;
     min-height: 120px;
@@ -470,7 +470,8 @@ header h1{
     .heart h2,
     .szamlalo h2,
     .ok h2,
-    .zenek h2{
+    .zenek h2,
+    .datumok h2{
         font-size: 30px;
     }
 
@@ -483,6 +484,10 @@ header h1{
     }
 
     .szamlalo p{
+        font-size: 24px;
+    }
+
+    .datum p{
         font-size: 24px;
     }
 
