@@ -148,8 +148,12 @@ header h1{
 .kepdoboz{
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
     text-align: center;
+}
+
+.kepdoboz img{
+    width: 264px;
+    height: 329px;
 }
 
 .szamlalo{
@@ -294,10 +298,6 @@ header h1{
 .zene a{
     text-decoration: none;
     color: #31012b;
-}
-
-.zene a:active{
-    
 }
 
 .zene p{
