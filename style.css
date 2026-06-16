@@ -108,7 +108,7 @@ header h1{
     background-color: rgb(211, 169, 224);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
-    border-radius: 10%;
+    border-radius: 100px;
     padding: 40px;
 }
 
@@ -123,6 +123,7 @@ header h1{
     width: 80%;
     align-items: center;
     border: 2px solid rgb(74, 3, 96);
+    border-radius: 20px;
 }
 
 .kep-container{
@@ -190,11 +191,140 @@ header h1{
 }
 
 #idoSzamlalo span {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     padding: 5px 10px;
     margin: 5px;
     border: 2px solid rgb(74, 3, 96);
+}
+
+.ok{
+    margin-top: 50px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(211, 169, 224);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 100px;
+    padding: 40px;
+}
+
+.ok h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.ok p{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(74, 3, 96);
+    border-radius: 5px;
+    padding: 30px 15px;
+    margin: 3px;
+    color: rgb(74, 3, 96);
+    font-size: 25px;
+    width: fit-content;
+    display: inline-block;
+}
+
+.okok{
+    width:100%;
+    text-align: center;
+}
+
+.okok p:hover{
+    cursor : pointer;
+    background-color: rgba(74, 3, 96, 0.3);
+}
+
+.zenek{
+    text-align: center;
+    margin-top: 50px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(211, 169, 224);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 100px;
+    padding: 40px;
+}
+
+.zenek h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.zene{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(74, 3, 96);
+    border-radius: 5px;
+    padding: 30px 15px;
+    margin: 2px;
+    color: rgb(74, 3, 96);
+    font-size: 25px;
+    width:fit-content;
+    display: inline-block;
+}
+
+.zene:hover{
+    cursor: pointer;
+    background-color: rgba(74, 3, 96, 0.3);
+}
+
+.zene a{
+    text-decoration: none;
+    color: #31012b;
+}
+
+.zene a:active{
+    
+}
+
+.zene p{
+    margin-left:10px;
+    margin-bottom:0px;
+    margin-top:0px;
+    display: inline-block;
+    text-align: center; 
+    align-items: center;
+    font-size: 20px;
+    font-family: "Times New Roman", cursive;
+}
+
+
+.borito{
+    border: 2px solid rgb(74, 3, 96);
+    margin-bottom:0px;
+    margin-top:0px;
+    width: 100px;
+    height: 100px;
+}
+
+.sziv{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    color: #31012b;
 }
 
 @media (max-width: 768px) {
