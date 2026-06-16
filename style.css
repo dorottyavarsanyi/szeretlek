@@ -431,4 +431,8 @@ header h1{
     width: 70px;
     height: 70px;
     }
+
+    #idoSzamlalo span{
+        width: 80%;
+    }
 }
