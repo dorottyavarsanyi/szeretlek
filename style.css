@@ -85,7 +85,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 header h1{
@@ -96,7 +96,7 @@ header h1{
     font-weight: 800;
     font-style: italic;
     color: rgb(74, 3, 96);
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .heart h2{
@@ -209,6 +209,7 @@ header h1{
 }
 
 #idoSzamlalo span {
+    width: fit-content;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     padding: 5px 10px;
@@ -233,6 +234,19 @@ header h1{
     font-size: clamp(28px, 5vw, 50px);
     margin-top: 0;
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(74, 3, 96);
+}
+
+.ok h3{
+    font-size: clamp(28px, 5vw, 30px);
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -278,6 +292,10 @@ header h1{
     border-radius: 100px;
     padding: 40px;
     margin-bottom: 50px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .zenek h2{
@@ -295,16 +313,19 @@ header h1{
 }
 
 .zene{
-    align-items: center;
+    text-align: left;
     background-color: rgba(255, 255, 255, 0.6);
     border: 2px solid rgb(74, 3, 96);
     border-radius: 5px;
-    padding: 30px 15px;
-    margin: 2px;
     color: rgb(74, 3, 96);
     font-size: 25px;
-    width:fit-content;
     display: inline-block;
+    gap: 15px;
+    padding: 15px;
+    min-width: 80px;
+    width: fit-content;
+    margin: 10px auto;
+    min-height: 120px;
 }
 
 .zene:hover{
@@ -318,9 +339,9 @@ header h1{
 }
 
 .zene p{
-    margin-left:10px;
-    margin-bottom:0px;
-    margin-top:0px;
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
     display: inline-block;
     text-align: center; 
     align-items: center;
@@ -330,11 +351,11 @@ header h1{
 
 
 .borito{
-    border: 2px solid rgb(74, 3, 96);
-    margin-bottom:0px;
-    margin-top:0px;
     width: 100px;
     height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid rgb(74, 3, 96);
 }
 
 .sziv{
@@ -390,11 +411,24 @@ header h1{
         font-size: 30px;
     }
 
+    .ok h3{
+        font-size: 30px;
+    }
+
     .heart p{
         font-size: 20px;
     }
 
     .szamlalo p{
         font-size: 24px;
+    }
+
+    .zene{
+    width: 100%;
+    }
+
+    .borito{
+    width: 70px;
+    height: 70px;
     }
 }
