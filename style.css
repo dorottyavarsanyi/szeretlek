@@ -19,8 +19,8 @@ body{
     background: linear-gradient(135deg, #e8a1e1, #31012b);
 }
 
-#masodik{
-        margin: 0;
+.masodik{
+    margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,38 @@ body{
     background-repeat: no-repeat, no-repeat; 
     background-size: cover, cover; 
     background-blend-mode: normal; 
+}
+
+.letoltes{
+    width: 100%;
+    min-height: 50px;
+    max-height: 350px;
+}
+
+.level{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(143, 6, 47);
+}
+
+.level h2{
+    font-size: 40px;
+}
+
+.level p{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.level a{
+    text-decoration: underline;
+    color: rgb(143, 6, 47);
+    font-size: 30px;
+    margin-top: 40px;
 }
 
 #jelszo.container{
@@ -350,6 +382,32 @@ header h1{
 
 .zenek a{
     text-decoration: none;
+}
+
+.lev{
+    text-align: center;
+    margin-top: 50px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgba(211, 169, 224,0.6);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(74, 3, 96);
+    border-radius: 100px;
+    padding: 40px;
+    margin-bottom: 50px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lev a{
+    color: #31012b;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .borito{
