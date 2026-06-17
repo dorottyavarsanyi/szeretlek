@@ -10,7 +10,6 @@ let w, h;
 let particles = [];
 
 function resize() {
-
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
     const rect = canvas.getBoundingClientRect();
@@ -24,9 +23,6 @@ function resize() {
     h = rect.height;
 }
 
-resize();
-window.addEventListener("resize", resize);
-
 function heart(t) {
     return {
         x: 16 * Math.pow(Math.sin(t), 3),
@@ -38,7 +34,7 @@ function heart(t) {
 }
 
 function createHeart() {
-    particles.length = 0;
+    particles = [];
 
     for (let i = 0; i < PARTICLE_COUNT; i++) {
 
@@ -60,7 +56,17 @@ function createHeart() {
     }
 }
 
-createHeart();
+function init() {
+    resize();
+    createHeart();
+}
+
+window.addEventListener("resize", () => {
+    resize();
+    createHeart();
+});
+
+init();
 
 setInterval(createHeart, 3000);
 
@@ -73,10 +79,10 @@ function animate(time) {
     if (time - last < 16) return;
     last = time;
 
-    ctx.fillStyle = "rgba(0,0,0,0.12)";
+    ctx.fillStyle = "rgba(49,1,43,0.15)";
     ctx.fillRect(0, 0, w, h);
 
-    ctx.fillStyle = "rgba(255,80,100,0.85)";
+    ctx.fillStyle = "rgba(255,120,180,0.85)";
 
     for (const p of particles) {
 
