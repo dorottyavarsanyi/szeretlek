@@ -440,6 +440,7 @@ canvas{
 
     display: block;
     margin: 50px auto;
+    margin-top: 20px;
 
     border: 2px solid white;
     border-radius: 100px;
