@@ -435,7 +435,8 @@ header h1{
 
 canvas{
     width: 80%;
-    height: 1200px;
+    min-height: 400px;
+    max-height: 1200px;
 
     display: block;
     margin: 50px auto;
@@ -452,7 +453,7 @@ canvas{
 
     canvas{
         width:95%;
-        height:350px;
+        height: 600px;
         border-radius:30px;
     }
 
