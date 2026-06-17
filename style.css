@@ -433,16 +433,27 @@ header h1{
     height: 80px;
 }
 
-canvas {
-    box-shadow: 0px 0px 10px 2px rgb(205, 157, 219);
+canvas{
+    width: 80%;
+    min-height: 1200px;
+
+    display: block;
+    margin: 50px auto;
+
     border: 2px solid white;
     border-radius: 100px;
-    display: block;
-    width: 80%;
+
+    box-shadow: 0 0 10px 2px rgb(205,157,219);
+
     background: radial-gradient(circle, #31012b, #e8a1e1);
 }
 
 @media (max-width:768px){
+
+    canvas{
+    width:80%;
+    border-radius:30px;
+    }
 
     .heart,
     .szamlalo,

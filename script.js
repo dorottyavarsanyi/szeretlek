@@ -1,13 +1,29 @@
-const canvas = document.querySelector("canvas");
+const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
+
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+const PARTICLE_COUNT = isMobile ? 300 : 900;
+const HEART_SCALE = isMobile ? 12 : 18;
 
 let w, h;
 let particles = [];
 
 function resize() {
-    w = canvas.width = window.innerWidth;
-    h = canvas.height = window.innerHeight;
+
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+
+    const rect = canvas.getBoundingClientRect();
+
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    w = rect.width;
+    h = rect.height;
 }
+
 resize();
 window.addEventListener("resize", resize);
 
@@ -22,21 +38,23 @@ function heart(t) {
 }
 
 function createHeart() {
-    particles = [];
+    particles.length = 0;
 
-    for (let i = 0; i < 900; i++) {
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+
         const t = Math.random() * Math.PI * 2;
-        const p = heart(t);
+        const hp = heart(t);
 
         particles.push({
             x: Math.random() * w,
             y: Math.random() * h,
 
-            tx: w / 2 + p.x * 18,
-            ty: h / 2 + p.y * 18,
+            tx: w / 2 + hp.x * HEART_SCALE,
+            ty: h / 2 + hp.y * HEART_SCALE,
 
             vx: 0,
             vy: 0,
+
             size: Math.random() * 2 + 1
         });
     }
@@ -46,15 +64,24 @@ createHeart();
 
 setInterval(createHeart, 3000);
 
-function animate() {
+let last = 0;
+
+function animate(time) {
+
     requestAnimationFrame(animate);
 
-    ctx.fillStyle = "rgba(0,0,0,0.15)";
+    if (time - last < 16) return;
+    last = time;
+
+    ctx.fillStyle = "rgba(0,0,0,0.12)";
     ctx.fillRect(0, 0, w, h);
 
+    ctx.fillStyle = "rgba(255,80,100,0.85)";
+
     for (const p of particles) {
-        let dx = p.tx - p.x;
-        let dy = p.ty - p.y;
+
+        const dx = p.tx - p.x;
+        const dy = p.ty - p.y;
 
         p.vx += dx * 0.002;
         p.vy += dy * 0.002;
@@ -65,19 +92,16 @@ function animate() {
         p.x += p.vx;
         p.y += p.vy;
 
-        const glow = ctx.createRadialGradient(
-            p.x, p.y, 0,
-            p.x, p.y, 8
-        );
-
-        glow.addColorStop(0, "rgba(255,60,60,1)");
-        glow.addColorStop(1, "rgba(255,0,0,0)");
-
-        ctx.fillStyle = glow;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+        ctx.arc(
+            p.x,
+            p.y,
+            p.size,
+            0,
+            Math.PI * 2
+        );
         ctx.fill();
     }
 }
 
-animate();
+requestAnimationFrame(animate);
