@@ -53,7 +53,7 @@ body{
 .level p{
     margin-top: 30px;
     font-size: 25px;
-    text-align: justify;
+    text-align: left;
 }
 
 .level a{
